@@ -1,4 +1,8 @@
-
+/*
+ * Meghann Benson This is my work.
+ * Card class defines a card object with two attributes. Also contains
+ * getters and setters for card color and number.
+ */
 public class Card {
 
 	private String color;

@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
-
+/*
+ * Meghann Benson This is my work.
+ * Hand class saves each players hand in an ArrayList.
+ */
 public class Hand {
 
 	List<Card> player1 = new ArrayList<Card>();
@@ -8,7 +11,7 @@ public class Hand {
 	List<Card> player3 = new ArrayList<Card>();
 	List<Card> player4 = new ArrayList<Card>();
 	List<Card> discardPile = new ArrayList<Card>();
-	
+
 	public List<Card> player1Hand() {
 		return player1;
 	}
@@ -24,18 +27,19 @@ public class Hand {
 	public List<Card> player4Hand() {
 		return player4;
 	}
-	
+
 	public List<Card> discard() {
 		return discardPile;
 	}
-
+	/*
+	 * The method prints a hand. 
+	 */
 	public List<Card> printHand(List<Card> playerHand) {
 		final int CARDS_PER_LINE = 6;
 		for (int i = 0; i < playerHand.size(); i++) {
-			if(i % CARDS_PER_LINE == 0) {
+			if (i % CARDS_PER_LINE == 0) {
 				System.out.println(playerHand.get(i).getColor() + playerHand.get(i).getNumber() + "  ");
-			}
-			else
+			} else
 				System.out.print(playerHand.get(i).getColor() + playerHand.get(i).getNumber() + "  ");
 		}
 		return playerHand;
